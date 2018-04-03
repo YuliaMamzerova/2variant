@@ -62,7 +62,7 @@ function nav_shema(){
         <ul role="directory" aria-label="Содержание" class="ibm-plain-list">
           <li><a href="index.php?page=2&shema=1"><big>Бисероплетение для начинающих</big></a></li>
           <li><a href="index.php?page=2&shema=2"><big>Вышивка бисером</big></a></li>
-          <li><a href="index.php?page=2&shema=3"><big>Техники бисероплетения</big></a></li>
+          <li><a href="index.php?page=2&shema=3"><big>Роза из бисера</big></a></li>
         </ul>
            </div>
       ';
@@ -84,7 +84,9 @@ switch ($shema) {
 	case '2':
 		include ('./shema/2.php');
 		break;
-	
+    case '3':
+        include ('./shema/3.php');
+        break;
 	default:
 		include ('./shema/1.php');
 		break;
