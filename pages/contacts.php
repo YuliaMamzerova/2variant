@@ -4,7 +4,7 @@
             <p>  Мой телефон:
 890265545</p>
 <p>E-mail:Bisermy.ru</p>
-<p><a href="Feedback.html">Обратная связь</a></p></address>
+<p><a href="./pages/fedback.php">Зарегистрироваться</a></p></address>
 <!--input type="button" name="Написать"
  style="width:80px;background: #9dc0f9; color:#000000; height:40px"></input-->
          </div>

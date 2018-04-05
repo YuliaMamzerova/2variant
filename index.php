@@ -1,4 +1,4 @@
-<?php 
+<?php
 include ('./func/func.php');
 include ('./tpl/head.php');
 
