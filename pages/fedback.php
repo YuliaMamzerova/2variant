@@ -4,14 +4,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Регистрация</title>
+        <link href="/css/signin.css" rel="stylesheet">
 </head>
 <body>
 <div class="col-md-12" >
-    <div class="col-md-8">
-        <h1>Зарегистрируйтесь</h1>
-        <form action="" method="post" name="registerform">
+    <div class="container" >
+
+        <form class="form-signin" action="" method="post" name="registerform">
+            <h2>Зарегистрируйтесь</h2>
             <p><label>Ваше имя:<br>
-                    <input name="u_name"="20" type="text" value=""></label></p>
+                    <input name="u_name" size="20" type="text" value=""></label></p>
             <p><label>Желаемый ник:<br>
                     <input name="u_nicename" size="30" type="text"></label></p>
             <p><label>Ваш email:<br>
@@ -19,7 +21,7 @@
             <p><label>Пароль:<br>
                     <input name="u_pass" size="30" type="password"></label></p>
             <p><input name="register" type="submit" value="Регистрация"></p>
-            <p><a href="log.php">Уже зарегистрированы?</a></p>
+            <p><a href="./pages/log.php">Уже зарегистрированы?</a></p>
         </form>
     </div>
 </div>

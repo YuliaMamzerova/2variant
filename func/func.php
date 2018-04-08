@@ -19,7 +19,7 @@ function nav(){
             <li class="active"><a href="index.php?page=1">О бисере</a></li>
             <li><a href="index.php?page=2">Схемы</a></li>
             <li><a href="index.php?page=3">Контакты</a></li>
-        
+         <li><a href="index.php?page=4">Зарегистрироваться</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -45,6 +45,9 @@ switch ($page) {
 	case '3':
 		include ('./pages/contacts.php');
 		break;
+    case '4':
+        include ('./pages/fedback.php');
+        break;
 	
 	default:
 		include ('./pages/index.php');
