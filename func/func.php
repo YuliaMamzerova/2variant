@@ -95,3 +95,36 @@ switch ($shema) {
 		break;
 }
 }
+function auth($step)
+  {
+switch($step)
+{case '1':
+  if (isset($_GET['email']) and isset($_GET['password']) ) {
+    $email=$_GET['email'];
+    $password=$_GET['password'];
+    if ($email=='123@mail.ru' and $password=="123456") {
+      echo "Привет ". $email ;
+
+   
+    //создать сессию
+    //и в сессию записать инфу что мы зарегены
+$_GET['step']= 2;
+    }
+echo '<script type="text/javascript">setTimeout(function(){location.replace("'.$url['url'].'");}, 15000);</script>';
+ 
+  }
+  
+  break;
+  case '2':
+    # перенаправить в закрытую часть сайта
+    break;
+  default :echo '<script type="text/javascript">setTimeout(function(){location.replace("'.$url['url'].'");}, 15000);</script>';
+
+  }
+}
+function auth_main()
+{
+  if (isset($_GET['step'])) {
+    auth($_GET['step']);
+  }
+}

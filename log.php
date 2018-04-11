@@ -1,4 +1,10 @@
-<?php required('./func/func.php') ;?>
+<?php 
+session_start();
+if (isset($_SESSION['log-ok']) {
+  # code...
+}
+include('./func/func.php') ;
+?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -27,6 +33,7 @@
   </head>
 
   <body>
+  <?php auth_main();?>
 
     <div class="container">
   <p><a href="/index.php">Назад</a></p>
@@ -37,6 +44,7 @@
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Запомни меня
         </label>
+        <input name="step" type="hidden" value="1">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
       </form>
 
